@@ -7,16 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3113D3933685990F9350DA08 /* Pods_ios_tasks_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F374EA68F5EC57BD3D7476 /* Pods_ios_tasks_app.framework */; };
 		D778A80F29F13FCA00D0D5AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D778A80E29F13FCA00D0D5AC /* AppDelegate.swift */; };
 		D778A81129F13FCA00D0D5AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D778A81029F13FCA00D0D5AC /* SceneDelegate.swift */; };
 		D778A81329F13FCA00D0D5AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D778A81229F13FCA00D0D5AC /* ViewController.swift */; };
 		D778A81629F13FCA00D0D5AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D778A81429F13FCA00D0D5AC /* Main.storyboard */; };
 		D778A81829F13FCB00D0D5AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D778A81729F13FCB00D0D5AC /* Assets.xcassets */; };
 		D778A81B29F13FCB00D0D5AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D778A81929F13FCB00D0D5AC /* LaunchScreen.storyboard */; };
+		D778A82329F1403200D0D5AC /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D778A82229F1403200D0D5AC /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D778A80B29F13FCA00D0D5AC /* ios-taks-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-taks-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38F374EA68F5EC57BD3D7476 /* Pods_ios_tasks_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_tasks_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FE67434DB3D66A0161289F3 /* Pods-ios-tasks-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-tasks-app.release.xcconfig"; path = "Target Support Files/Pods-ios-tasks-app/Pods-ios-tasks-app.release.xcconfig"; sourceTree = "<group>"; };
+		B104B475E3757601905F4739 /* Pods-ios-tasks-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-tasks-app.debug.xcconfig"; path = "Target Support Files/Pods-ios-tasks-app/Pods-ios-tasks-app.debug.xcconfig"; sourceTree = "<group>"; };
+		D778A80B29F13FCA00D0D5AC /* ios-tasks-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-tasks-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D778A80E29F13FCA00D0D5AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D778A81029F13FCA00D0D5AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D778A81229F13FCA00D0D5AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		D778A81729F13FCB00D0D5AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D778A81A29F13FCB00D0D5AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D778A81C29F13FCB00D0D5AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D778A82229F1403200D0D5AC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,24 +37,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3113D3933685990F9350DA08 /* Pods_ios_tasks_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A8559E8E4C75D2585E8980EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38F374EA68F5EC57BD3D7476 /* Pods_ios_tasks_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B88D585848A5B3FCFBD5C556 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B104B475E3757601905F4739 /* Pods-ios-tasks-app.debug.xcconfig */,
+				6FE67434DB3D66A0161289F3 /* Pods-ios-tasks-app.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D778A80229F13FCA00D0D5AC = {
 			isa = PBXGroup;
 			children = (
+				D778A82229F1403200D0D5AC /* Podfile */,
 				D778A80D29F13FCA00D0D5AC /* ios-taks-app */,
 				D778A80C29F13FCA00D0D5AC /* Products */,
+				B88D585848A5B3FCFBD5C556 /* Pods */,
+				A8559E8E4C75D2585E8980EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		D778A80C29F13FCA00D0D5AC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D778A80B29F13FCA00D0D5AC /* ios-taks-app.app */,
+				D778A80B29F13FCA00D0D5AC /* ios-tasks-app.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,21 +98,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D778A80A29F13FCA00D0D5AC /* ios-taks-app */ = {
+		D778A80A29F13FCA00D0D5AC /* ios-tasks-app */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D778A81F29F13FCB00D0D5AC /* Build configuration list for PBXNativeTarget "ios-taks-app" */;
+			buildConfigurationList = D778A81F29F13FCB00D0D5AC /* Build configuration list for PBXNativeTarget "ios-tasks-app" */;
 			buildPhases = (
+				355A7ED54B9DD813F30B9DB3 /* [CP] Check Pods Manifest.lock */,
 				D778A80729F13FCA00D0D5AC /* Sources */,
 				D778A80829F13FCA00D0D5AC /* Frameworks */,
 				D778A80929F13FCA00D0D5AC /* Resources */,
+				E9324F4F0B5621F5848387AF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "ios-taks-app";
+			name = "ios-tasks-app";
 			productName = "ios-taks-app";
-			productReference = D778A80B29F13FCA00D0D5AC /* ios-taks-app.app */;
+			productReference = D778A80B29F13FCA00D0D5AC /* ios-tasks-app.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +132,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D778A80629F13FCA00D0D5AC /* Build configuration list for PBXProject "ios-taks-app" */;
+			buildConfigurationList = D778A80629F13FCA00D0D5AC /* Build configuration list for PBXProject "ios-tasks-app" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +145,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D778A80A29F13FCA00D0D5AC /* ios-taks-app */,
+				D778A80A29F13FCA00D0D5AC /* ios-tasks-app */,
 			);
 		};
 /* End PBXProject section */
@@ -127,11 +157,54 @@
 			files = (
 				D778A81B29F13FCB00D0D5AC /* LaunchScreen.storyboard in Resources */,
 				D778A81829F13FCB00D0D5AC /* Assets.xcassets in Resources */,
+				D778A82329F1403200D0D5AC /* Podfile in Resources */,
 				D778A81629F13FCA00D0D5AC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		355A7ED54B9DD813F30B9DB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-tasks-app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9324F4F0B5621F5848387AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-tasks-app/Pods-ios-tasks-app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-tasks-app/Pods-ios-tasks-app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios-tasks-app/Pods-ios-tasks-app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D778A80729F13FCA00D0D5AC /* Sources */ = {
@@ -282,6 +355,7 @@
 		};
 		D778A82029F13FCB00D0D5AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B104B475E3757601905F4739 /* Pods-ios-tasks-app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +383,7 @@
 		};
 		D778A82129F13FCB00D0D5AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FE67434DB3D66A0161289F3 /* Pods-ios-tasks-app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -337,7 +412,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D778A80629F13FCA00D0D5AC /* Build configuration list for PBXProject "ios-taks-app" */ = {
+		D778A80629F13FCA00D0D5AC /* Build configuration list for PBXProject "ios-tasks-app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D778A81D29F13FCB00D0D5AC /* Debug */,
@@ -346,7 +421,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D778A81F29F13FCB00D0D5AC /* Build configuration list for PBXNativeTarget "ios-taks-app" */ = {
+		D778A81F29F13FCB00D0D5AC /* Build configuration list for PBXNativeTarget "ios-tasks-app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D778A82029F13FCB00D0D5AC /* Debug */,
