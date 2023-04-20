@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XxW-rR-aAU">
-                                <rect key="frame" x="0.0" y="764" width="393" height="88"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XxW-rR-aAU">
+                                <rect key="frame" x="0.0" y="764" width="393" height="86"/>
                                 <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="88" id="0xo-Is-lMT"/>
@@ -35,6 +35,25 @@
                                     <segue destination="vF9-qr-U0V" kind="embed" id="z2m-4y-gVo"/>
                                 </connections>
                             </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PiA-Bz-AmB">
+                                <rect key="frame" x="164.66666666666666" y="726" width="64" height="64"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="IUA-lz-YsR"/>
+                                    <constraint firstAttribute="width" constant="64" id="Uh2-wP-Wat"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="32"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addTaskButtonTaped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vKz-Ty-HEw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -48,6 +67,8 @@
                             <constraint firstItem="KBb-vL-Q7h" firstAttribute="trailing" secondItem="QRw-wC-vWO" secondAttribute="trailing" id="ctF-c9-v5c"/>
                             <constraint firstItem="QRw-wC-vWO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="erA-SR-H9f"/>
                             <constraint firstAttribute="bottom" secondItem="XxW-rR-aAU" secondAttribute="bottom" id="gR9-t6-4ed"/>
+                            <constraint firstItem="PiA-Bz-AmB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j9Y-GT-4iv"/>
+                            <constraint firstItem="PiA-Bz-AmB" firstAttribute="firstBaseline" secondItem="XxW-rR-aAU" secondAttribute="firstBaseline" id="lwY-rp-jmd"/>
                             <constraint firstItem="XxW-rR-aAU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rz5-0Y-Hfx"/>
                             <constraint firstItem="KBb-vL-Q7h" firstAttribute="bottom" secondItem="QRw-wC-vWO" secondAttribute="bottom" id="va0-SD-cJG"/>
                         </constraints>
@@ -69,6 +90,7 @@
                         <outlet property="doneTasksContainerView" destination="QRw-wC-vWO" id="7sf-mW-U5S"/>
                         <outlet property="menuSegmentedControl" destination="nDw-lL-V8i" id="xNk-Ye-RxI"/>
                         <outlet property="ongoingTasksContainerView" destination="KBb-vL-Q7h" id="SDY-4A-xqv"/>
+                        <segue destination="nuC-VI-1HB" kind="presentation" identifier="showAddNewTask" id="1Lo-BI-770"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -149,8 +171,24 @@
             </objects>
             <point key="canvasLocation" x="1647" y="794"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="t5c-RN-QUT">
+            <objects>
+                <viewController id="nuC-VI-1HB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PXY-eb-PIF">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="7sD-fp-pxR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hAY-q3-j5N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2358" y="18"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
