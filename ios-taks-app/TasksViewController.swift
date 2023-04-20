@@ -9,12 +9,21 @@ import UIKit
 
 class TasksViewController: UIViewController {
 
+    @IBOutlet weak var menuSegmentedControl: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        view.backgroundColor = .yellow
+        setupSegmentedControl()
     }
-
+    
+    private func setupSegmentedControl(){
+        menuSegmentedControl.removeAllSegments()
+        
+        MenuSection.allCases.enumerated().forEach { (index,section) in
+            menuSegmentedControl.insertSegment(withTitle: section.rawValue, at: index, animated: false)
+        }
+        
+        menuSegmentedControl.selectedSegmentIndex = 0
+    }
 
 }
 
