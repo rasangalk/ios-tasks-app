@@ -19,8 +19,7 @@ class TasksViewController: UIViewController {
         super.viewDidLoad()
         setupSegmentedControl()
         
-        ongoingTasksContainerView.isHidden = false
-        doneTasksContainerView.isHidden = true
+        
     }
     
     private func setupSegmentedControl(){
@@ -29,8 +28,30 @@ class TasksViewController: UIViewController {
         MenuSection.allCases.enumerated().forEach { (index,section) in
             menuSegmentedControl.insertSegment(withTitle: section.rawValue, at: index, animated: false)
         }
-        
         menuSegmentedControl.selectedSegmentIndex = 0
+        showContainerView(for: .ongoing)
+    }
+    
+    @IBAction func segmentedControlChanged(_ sender: UISegmentedControl){
+        switch sender.selectedSegmentIndex {
+        case 0:
+            showContainerView(for: .ongoing)
+        case 1:
+            showContainerView(for: .done)
+        default:
+            break
+        }
+    }
+    
+    private func showContainerView(for section: MenuSection){
+        switch section {
+        case .ongoing:
+            ongoingTasksContainerView.isHidden = false
+            doneTasksContainerView.isHidden = true
+        case .done:
+            ongoingTasksContainerView.isHidden = true
+            doneTasksContainerView.isHidden = false
+        }
     }
 
 }
