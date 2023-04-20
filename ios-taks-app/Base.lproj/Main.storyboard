@@ -63,7 +63,9 @@
                         </segmentedControl>
                     </navigationItem>
                     <connections>
+                        <outlet property="doneTasksContainerView" destination="QRw-wC-vWO" id="7sf-mW-U5S"/>
                         <outlet property="menuSegmentedControl" destination="nDw-lL-V8i" id="xNk-Ye-RxI"/>
+                        <outlet property="ongoingTasksContainerView" destination="KBb-vL-Q7h" id="SDY-4A-xqv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -88,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Ongoing Tasks Table View Controller-->
         <scene sceneID="GZu-6Z-Mei">
             <objects>
-                <tableViewController id="vF9-qr-U0V" sceneMemberID="viewController">
+                <tableViewController id="vF9-qr-U0V" customClass="OngoingTasksTableViewController" customModule="ios_tasks_app" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="ljO-gc-6zb">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="609"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,10 +118,10 @@
             </objects>
             <point key="canvasLocation" x="476" y="794"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Done Tasks Table View Controller-->
         <scene sceneID="vAe-xI-gjU">
             <objects>
-                <tableViewController id="L6u-aC-EkC" sceneMemberID="viewController">
+                <tableViewController id="L6u-aC-EkC" customClass="DoneTasksTableViewController" customModule="ios_tasks_app" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="7aF-hm-pr0">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="609"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3113D3933685990F9350DA08 /* Pods_ios_tasks_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F374EA68F5EC57BD3D7476 /* Pods_ios_tasks_app.framework */; };
 		D70BAB0229F148060074B154 /* MenuSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70BAB0129F148060074B154 /* MenuSection.swift */; };
+		D70BAB0529F1534C0074B154 /* OngoingTasksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70BAB0429F1534C0074B154 /* OngoingTasksTableViewController.swift */; };
+		D70BAB0729F154260074B154 /* DoneTasksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70BAB0629F154260074B154 /* DoneTasksTableViewController.swift */; };
 		D778A80F29F13FCA00D0D5AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D778A80E29F13FCA00D0D5AC /* AppDelegate.swift */; };
 		D778A81129F13FCA00D0D5AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D778A81029F13FCA00D0D5AC /* SceneDelegate.swift */; };
 		D778A81329F13FCA00D0D5AC /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D778A81229F13FCA00D0D5AC /* TasksViewController.swift */; };
@@ -23,6 +25,8 @@
 		6FE67434DB3D66A0161289F3 /* Pods-ios-tasks-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-tasks-app.release.xcconfig"; path = "Target Support Files/Pods-ios-tasks-app/Pods-ios-tasks-app.release.xcconfig"; sourceTree = "<group>"; };
 		B104B475E3757601905F4739 /* Pods-ios-tasks-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-tasks-app.debug.xcconfig"; path = "Target Support Files/Pods-ios-tasks-app/Pods-ios-tasks-app.debug.xcconfig"; sourceTree = "<group>"; };
 		D70BAB0129F148060074B154 /* MenuSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSection.swift; sourceTree = "<group>"; };
+		D70BAB0429F1534C0074B154 /* OngoingTasksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OngoingTasksTableViewController.swift; sourceTree = "<group>"; };
+		D70BAB0629F154260074B154 /* DoneTasksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneTasksTableViewController.swift; sourceTree = "<group>"; };
 		D778A80B29F13FCA00D0D5AC /* ios-tasks-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-tasks-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D778A80E29F13FCA00D0D5AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D778A81029F13FCA00D0D5AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +75,15 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		D70BAB0329F1531D0074B154 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				D70BAB0429F1534C0074B154 /* OngoingTasksTableViewController.swift */,
+				D70BAB0629F154260074B154 /* DoneTasksTableViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
 		D778A80229F13FCA00D0D5AC = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +106,7 @@
 		D778A80D29F13FCA00D0D5AC /* ios-taks-app */ = {
 			isa = PBXGroup;
 			children = (
+				D70BAB0329F1531D0074B154 /* controller */,
 				D70BAB0029F147E60074B154 /* model */,
 				D778A80E29F13FCA00D0D5AC /* AppDelegate.swift */,
 				D778A81029F13FCA00D0D5AC /* SceneDelegate.swift */,
@@ -225,6 +239,8 @@
 				D778A80F29F13FCA00D0D5AC /* AppDelegate.swift in Sources */,
 				D70BAB0229F148060074B154 /* MenuSection.swift in Sources */,
 				D778A81129F13FCA00D0D5AC /* SceneDelegate.swift in Sources */,
+				D70BAB0729F154260074B154 /* DoneTasksTableViewController.swift in Sources */,
+				D70BAB0529F1534C0074B154 /* OngoingTasksTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

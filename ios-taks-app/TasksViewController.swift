@@ -10,9 +10,17 @@ import UIKit
 class TasksViewController: UIViewController {
 
     @IBOutlet weak var menuSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var ongoingTasksContainerView : UIView!
+    @IBOutlet weak var doneTasksContainerView : UIView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupSegmentedControl()
+        
+        ongoingTasksContainerView.isHidden = false
+        doneTasksContainerView.isHidden = true
     }
     
     private func setupSegmentedControl(){
